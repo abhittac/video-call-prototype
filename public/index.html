@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video Call Prototype</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Video Call</h2>
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+
+    <div id="controls">
+      <button id="callBtn">Call</button>
+      <button id="answerBtn" hidden>Answer</button>
+      <button id="declineBtn" hidden>Decline</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
